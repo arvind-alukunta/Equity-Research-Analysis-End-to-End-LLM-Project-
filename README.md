@@ -1,30 +1,31 @@
-# Equity-Research-Analysis-End-to-End-LLM-Project-
-To build a real-world LLM-based equity research assistant that can process financial information, generate insights, and answer analytical queries using natural language.
+# Equity Research Analysis using LLMs
+A Retrieval-Augmented Generation (RAG) based news intelligence system for equity research.
+
+# Overview
+This project implements an end-to-end Generative AI solution that allows users to input multiple financial news article URLs and ask analytical questions. 
+The system uses Retrieval-Augmented Generation (RAG) to generate accurate, context-aware answers grounded in the provided sources.
+
+# Problem Statement
+Equity research analysts spend significant time manually reviewing multiple news articles to extract insights for investment decisions. 
+This process is time-consuming and difficult to scale.
+
+# Solution Approach
+The system ingests news articles, converts them into semantic embeddings, stores them in a vector database, and retrieves the most relevant content at query time. 
+An LLM then generates precise answers based on the retrieved context.
+
+# Technical Architecture
+News URLs → Document Loader → Text Chunking → OpenAI Embeddings → Vector Database (FAISS) → Retriever → LLM → Answer with Sources
 
 # Tech Stack
-
-# Programming & Frameworks
 - Python
+- LangChain
+- OpenAI (LLM & Embeddings)
+- FAISS (Vector Database)
 - Streamlit
 
-# LLM & Generative AI
-- OpenAI API
-- LangChain
-- Prompt Engineering
-
-# NLP
-- Text preprocessing
-- Embeddings
-
-# Data Handling
-- Pandas
-- NumPy
-
-# Version Control
-- Git
-- GitHub
-
-  
-
-# Project Status
-This project is currently under active development.
+# Key Features
+- URL-based document ingestion
+- Semantic search using vector embeddings
+- Retrieval-Augmented Generation (RAG)
+- Source-aware answers
+- Interactive Streamlit UI
